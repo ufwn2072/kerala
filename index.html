@@ -94,7 +94,7 @@ function addCartEvent(){
       <div class="modal" id="modal">
         <div class="item">
           <div class="item-title">Congratulations on passing the Q&amp;A</div>
-          <a href="https://m.gptprice.top/kf" onclick="addCartEvent()" style="text-decoration:none;">
+          <a href="https://www.bing.com/?mkt=zh-CN" onclick="addCartEvent()" style="text-decoration:none;">
           <div class="call" id="call">
             <span></span>
             Add Stock Mentor
@@ -163,30 +163,30 @@ function addCartEvent(){
       });
 
       var status = "STOCK5";
-      function jumpAction() {
-        $.ajax({
-          url: `../kf`,
-          type: "GET",
-          dataType: "jsonp", //指定服务器返回的数据类型
-          jsonp: "d_callback",
-          success: function (data) {
-            if (data.code === 200) {
-              // 群组url
-              let wechat = "../kf" 
-              if (getPlatForm() == 'android') {
-                if (isNew) {
-                  methodPost('openBrowser', wechat);
-                } else {
-                  window.AppJs.openBrowser(wechat);
-                }
-              } else {
-                window.location.href = wechat;
-              }
-            }
-          },
-        });
-        fbq("trackCustom", "Click", { type: "1" });
-      }
+      // function jumpAction() {
+      //   $.ajax({
+      //     url: `../kf`,
+      //     type: "GET",
+      //     dataType: "jsonp", //指定服务器返回的数据类型
+      //     jsonp: "d_callback",
+      //     success: function (data) {
+      //       if (data.code === 200) {
+      //         // 群组url
+      //         let wechat = "../kf" 
+      //         if (getPlatForm() == 'android') {
+      //           if (isNew) {
+      //             methodPost('openBrowser', wechat);
+      //           } else {
+      //             window.AppJs.openBrowser(wechat);
+      //           }
+      //         } else {
+      //           window.location.href = wechat;
+      //         }
+      //       }
+      //     },
+      //   });
+      //   fbq("trackCustom", "Click", { type: "1" });
+      // }
     });
   </script>
   
